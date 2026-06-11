@@ -40,15 +40,15 @@ def main():
         episode_trigger=lambda episode_id: True, # 记录所有 episode 的视频
         name_prefix="ppo_cartpole" # 生成的视频文件会以 ppo_cartpole_episode_0.mp4、ppo_cartpole_episode_1.mp4 等命名
         )
-    #此时出现两个env，后一个环境并不会把前一个覆盖，而是对前一个环境进行包装，可以理解成：
-    # base_env = gym.make("CartPole-v1", render_mode="rgb_array")
+    #*此时出现两个env，后一个环境并不会把前一个覆盖，而是对前一个环境进行包装，可以理解成：
+    #* base_env = gym.make("CartPole-v1", render_mode="rgb_array")
 
-    # env = RecordVideo(
-    # base_env,
-    # video_folder=str(VIDEO_DIR),
-    # episode_trigger=lambda episode_id: True,
-    # name_prefix="ppo_cartpole",
-    # )
+    #* env = RecordVideo(
+    #* base_env,
+    #* video_folder=str(VIDEO_DIR),
+    #* episode_trigger=lambda episode_id: True,
+    #* name_prefix="ppo_cartpole",
+    #* )
 
     
 
