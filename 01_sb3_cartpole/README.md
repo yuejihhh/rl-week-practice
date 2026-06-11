@@ -142,7 +142,7 @@
    ```
    新手可以先少用 git add .，避免把视频、缓存、日志都加进去。
 
-   提交
+   提交到本地仓库
    ```bash
    git commit -m "day 1: train PPO on CartPole"
    ```
@@ -150,6 +150,21 @@
    ```bash
    git log --oneline
    ```
+   在github创建远程仓库,并本地连接,git remote是管理远程仓库，origin是远程仓库约定俗成的名字    
+   ```bash
+   cd /home/zhangyue/rl-week-practice
+   git remote add origin https://github.com/你的用户名/rl-week-practice.git
+   ```
+   初次push到github，-u，让本地分支与远程分支建立联系
+   ```bash
+   git push -u origin master
+   ```
+   以后在当前本地分支再push
+   ```bash
+   git push 
+   ```
+
+
 ## 任务2
 
 对应程序：train_cartpole eval_cartpole
