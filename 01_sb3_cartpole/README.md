@@ -186,11 +186,11 @@
 6. 统计每局 reward
 
 ### 运行命令
-
+```bash
 python train_cartpole.py
 python eval_cartpole.py
 tensorboard --logdir logs
-
+```
 ## 任务3
 对应程序：02_train_pendulum 02_eval_pendulum
 ### 环境修改
@@ -201,6 +201,7 @@ tensorboard --logdir logs
 ### 训练效果评估
 1. 观看评估视频：cartpole杆可以不倒，pendulum摆可以倒立在上方
 2. 查看tensorboard
+
    ep_len_mean ：最近若干局 episode 的平均长度,即平均每一局坚持了多少步
 
    ep_rew_mean ：最近若干局 episode 的平均总奖励
